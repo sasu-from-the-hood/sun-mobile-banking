@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sun Bank Create Account</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h2>Create New Account</h2>
+      <form >
+        <input
+          type="text"
+          class="first_name"
+          placeholder="First Name"
+          required
+        /><br />
+        <input
+          type="text"
+          class="last_name"
+          placeholder="Last Name"
+          required
+        /><br />
+        <input
+          type="text"
+          class="username"
+          placeholder="Username"
+          required
+        /><br />
+        <input
+          type="password"
+          class="password"
+          placeholder="pin"
+          maxlength="4"
+          required
+        /><br />
+        <button class="signin__btn" type="submit">Create Account</button>
+        <div class="js-text-popup"></div>
+        <div class="create-account">
+          <span>You have an account? <a href="index.html">Login into your account</a></span>
+          <span><a href="admin.html">Login as an admin</a>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="createNewAccount.js"></script>
+  </body>
+</html>

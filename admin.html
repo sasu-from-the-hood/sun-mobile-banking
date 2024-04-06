@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <title>SunBank</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <p class="welcome">Log In To Your Bank Account</p>
+        <a href="index.html">Log In As An User</a>
+      </div>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <form class="login">
+        <input
+          type="text"
+          placeholder="admin"
+          class="login__input login__input--admin"
+        />
+        <input
+          type="password"
+          placeholder="PIN"
+          maxlength="4"
+          class="login__input login__input--admin-pin"
+        />
+        <button class="login__admin-btn">Log In</button>
+      </form>
+    </nav>
+    <div class="balance-row">
+      <div class="balance">
+        <div>
+          <p class="balance__label">Current Date</p>
+          <p class="balance__date">
+            As of <span class="date">01/03/2024</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <main class="app">
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__date">3 days ago</div>
+          <div class="movements__value">4 000€</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">-378€</div>
+        </div>
+      </div>
+      <div class="operations">
+        <div class="operation operation--transfer">
+          <h2>Transfer money</h2>
+          <form class="form form--transfer">
+            <div class="form-col">
+              <input type="text" class="form__input form__input--admin-to" />
+              <label class="form__label">Account Number</label>
+            </div>
+            <div class="form-col">
+              <input
+                type="number"
+                class="form__input form__input--admin-amount"
+              />
+              <label class="form__label">Amount</label>
+            </div>
+
+            <button class="form__btn form__btn--admin-transfer">&rarr;</button>
+          </form>
+          <div class="js-text-popup"></div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>
